@@ -73,8 +73,7 @@ if (!function_exists('subirAvatar')) {
 if (!function_exists('generarCodigoEmpleado')) {
     function generarCodigoEmpleado()
     {
-        $emp = Empleado::orderBy('id_emp', 'desc')->first();
-        $id = ltrim(substr($emp->codigo_emp, 4), '0');
+        $id = Empleado::orderBy('id_emp', 'desc')->first()->id_emp;
         $id++;
 
         $codigo = '';

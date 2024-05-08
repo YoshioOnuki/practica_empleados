@@ -42,7 +42,7 @@
 
 
                             </div>
-                            <div class="form-label">Historial de salarios</div>
+                            {{-- <div class="form-label">Historial de salarios</div>
                             <div class="table-responsive">
                                 <table class="table mb-0">
                                     <thead>
@@ -84,7 +84,7 @@
                                     @endforelse
                                     </tbody>
                                 </table>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="card-footer text-end">
                             <a href="{{ route('empleados') }}" class="btn btn-secondary">Regresar</a>

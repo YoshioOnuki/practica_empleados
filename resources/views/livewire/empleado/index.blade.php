@@ -79,7 +79,7 @@
                                                 <span class="text-secondary">{{ $i++ }}</span>
                                             </td>
                                             <td>
-                                                {{ $item->nombre_completo }}
+                                                {{ $item->codigo_emp }} - {{ $item->nombre_completo }}
                                             </td>
                                             <td>
                                                 {{ $item->salario_emp }}
