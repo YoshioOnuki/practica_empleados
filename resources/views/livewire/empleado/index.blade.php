@@ -59,7 +59,7 @@
                             <table class="table card-table table-vcenter text-nowrap table-striped  datatable">
                                 <thead>
                                     <tr>
-                                        <th class="w-1">No.</th>
+                                        <th class="w-1">Código</th>
                                         <th>Empleado</th>
                                         <th>Salario</th>
                                         <th>Fecha Ingreso</th>
@@ -70,16 +70,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @php
-                                        $i = 1;
-                                    @endphp
                                     @forelse ($empleados as $item)
                                         <tr>
                                             <td>
-                                                <span class="text-secondary">{{ $i++ }}</span>
+                                                <span class="text-secondary">{{ $item->codigo_emp}}</span>
                                             </td>
                                             <td>
-                                                {{ $item->codigo_emp }} - {{ $item->nombre_completo }}
+                                                {{ $item->nombre_completo }}
                                             </td>
                                             <td>
                                                 {{ $item->salario_emp }}
